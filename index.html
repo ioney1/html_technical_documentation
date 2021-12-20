@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Documentation</title>
+    <link href="tech_doc_style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header><h1>HTML Documentation</h1></header>
+
+      <a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a>
+      <a class="nav-link" href="#Getting_Started">Getting Started</a>
+      <a class="nav-link" href="#What_is_HTML?">What is HTML?</a>
+      <a class="nav-link" href="#Anatomy_of_an_HTML_Element"
+        >Anatomy of an HTML Element</a
+      >
+      <a class="nav-link" href="#Attributes">Attributes</a>
+      <a class="nav-link" href="#Anatomy_of_an_HTML_Document"
+        >Anatomy of an HTML Document</a
+      >
+      <a class="nav-link" href="#References">References</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_HTML">
+        <header><h2>Introduction to HTML</h2></header>
+
+        <article>
+          <p>
+            At its heart, HTML is a fairly simple language made up of elements,
+            which can be applied to pieces of text to give them different
+            meaning in a document (Is it a paragraph? Is it a bulleted list? Is
+            it part of a table?), structure a document into logical sections
+            (Does it have a header? Three columns of content? A navigation
+            menu?), and embed content such as images and videos into a page.
+            This module will introduce the first two of these and introduce
+            fundamental concepts and syntax you need to know to understand HTML.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Getting_Started">
+        <header><h2>Getting Started</h2></header>
+
+        <article>
+          <p>
+            In this article we cover the absolute basics of HTML. To get you
+            started, this article defines elements, attributes, and all the
+            other important terms you may have heard. It also explains where
+            these fit into HTML. You will learn how HTML elements are
+            structured, how a typical HTML page is structured, and other
+            important basic language features. Along the way, there will be an
+            opportunity to play with HTML too!
+          </p>
+
+          <h4>Prerequisites:</h4>
+          <ul>
+            <li>Basic computer literacy</li>
+
+            <li>
+              Basic software installed
+              <ul>
+                <li><b>A text editor</b> for writing code</li>
+
+                <li><b>Web browser</b> for testing code</li>
+
+                <li>
+                  <b>A graphics editor</b> for making images or graphics for web
+                  pages
+                </li>
+
+                <li>
+                  <b>A version control system</b> to manage files on servers,
+                  collaborate on team projects, share code and assets and avoid
+                  editing conflicts
+                </li>
+
+                <li>plus many more!</li>
+              </ul>
+            </li>
+
+            <li>Basic knowledge of working with files</li>
+          </ul>
+
+          <h4>Objectives:</h4>
+          <ul>
+            <li>Gain basic familiarity with HTML</li>
+
+            <li>Practice writing a few HTML elements</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="What_is_HTML?">
+        <header><h2>What is HTML?</h2></header>
+
+        <article>
+          <p>
+            HTML (Hypertext Markup Language) is not a programming language. It
+            is a markup language that tells web browsers how to structure the
+            web pages you visit. It can be as complicated or as simple as the
+            web developer wants it to be. HTML consists of a series of elements,
+            which you use to enclose, wrap, or mark up different parts of
+            content to make it appear or act in a certain way. The enclosing
+            tags can make content into a hyperlink to connect to another page,
+            italicize words, and so on. For example, consider the following line
+            of text:
+          </p>
+
+          <samp>My cat is very grumpy</samp>
+
+          <p>
+            If we wanted the text to stand by itself, we could specify that it
+            is a paragraph by enclosing it in a paragraph
+            (<code>&#60;p&#62;</code>) element:
+          </p>
+
+          <p class="codeblock">
+            <code class="block">
+              <strong class="enclose">&#60;</strong>p<strong class="enclose"
+                >&#62;</strong
+              >My cat is very grumpy<strong class="enclose">&#60;</strong
+              >/p<strong class="enclose">&#62;</strong>
+            </code>
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Anatomy_of_an_HTML_Element">
+        <header><h2>Anatomy of an HTML Element</h2></header>
+
+        <article>
+          <p>
+            Let's further explore our paragraph element from the previous
+            section:
+          </p>
+
+          <p class="codeblock">
+            <code class="block">
+              <strong class="enclose">&#60;</strong>p<strong class="enclose"
+                >&#62;</strong
+              >My cat is very grumpy<strong class="enclose">&#60;</strong
+              >/p<strong class="enclose">&#62;</strong>
+            </code>
+          </p>
+
+          <p>The anatomy of our element is:</p>
+
+          <ul>
+            <li>
+              <b>The opening tag (<code>&#60;p&#62;</code>):</b> This consists
+              of the name of the element (in this example, p for paragraph),
+              wrapped in opening and closing angle brackets. This opening tag
+              marks where the element begins or starts to take effect. In this
+              example, it precedes the start of the paragraph text.
+            </li>
+
+            <li>
+              <b>The content:</b> This is the content of the element. In this
+              example, it is the paragraph text:
+              <code>"My cat is very grumpy"</code>.
+            </li>
+
+            <li>
+              <b>The closing tag (<code>&#60;/p&#62;</code>):</b> This is the
+              same as the opening tag, except that it includes a forward slash
+              before the element name. This marks where the element ends.
+              Failing to include a closing tag is a common beginner error that
+              can produce peculiar results.
+            </li>
+          </ul>
+
+          <p>
+            The element is the opening tag, followed by content, followed by the
+            closing tag.
+          </p>
+        </article>
+
+        <article>
+          <h3>Nesting elements</h3>
+
+          <p>
+            Elements can be placed within other elements. This is called
+            nesting. If we wanted to state that our cat is
+            <strong>very</strong> grumpy, we could wrap the word very in a
+            <code>&#60;strong&#62;</code> element, which means that the word is
+            to have strong(er) text formatting:
+          </p>
+
+          <p class="codeblock">
+            <code class="block">
+              <strong class="enclose">&#60;</strong>p<strong class="enclose"
+                >&#62;</strong
+              >My cat is <strong class="enclose">&#60;</strong>strong<strong
+                class="enclose"
+                >&#62;</strong
+              >very<strong class="enclose">&#60;</strong>/strong<strong
+                class="enclose"
+                >&#62;</strong
+              >
+              grumpy<strong class="enclose">&#60;</strong>/p<strong
+                class="enclose"
+                >&#62;</strong
+              >
+            </code>
+          </p>
+
+          <p>
+            There is a right and wrong way to do nesting. In the example above,
+            we opened the p element first, then opened the strong element. For
+            proper nesting, we should close the strong element first, before
+            closing the p.
+          </p>
+
+          <p>The following is an example of the wrong way to do nesting:</p>
+
+          <p class="codeblock">
+            <code class="block">
+              <strong class="enclose">&#60;</strong>p<strong class="enclose"
+                >&#62;</strong
+              >My cat is <strong class="enclose">&#60;</strong>strong<strong
+                class="enclose"
+                >&#62;</strong
+              >very grumpy<strong class="enclose">&#60;</strong>/p<strong
+                class="enclose"
+                >&#62;</strong
+              ><strong class="enclose">&#60;</strong>/strong<strong
+                class="enclose"
+                >&#62;</strong
+              >
+            </code>
+          </p>
+
+          <p>
+            The
+            <strong
+              >tags have to open and close in a way that they are inside or
+              outside one another</strong
+            >. With the kind of overlap in the example above, the browser has to
+            guess at your intent. This kind of guessing can result in unexpected
+            results.
+          </p>
+        </article>
+
+        <article>
+          <h3>Block versus inline elements</h3>
+
+          <p>
+            There are two important categories of elements to know in HTML:
+            block-level elements and inline elements.
+          </p>
+
+          <ul>
+            <li>
+              Block-level elements form a visible block on a page. A block-level
+              element appears on a new line following the content that precedes
+              it. Any content that follows a block-level element also appears on
+              a new line. Block-level elements are usually structural elements
+              on the page. For example, a block-level element might represent
+              headings, paragraphs, lists, navigation menus, or footers. A
+              block-level element wouldn't be nested inside an inline element,
+              but it might be nested inside another block-level element.
+            </li>
+
+            <li>
+              Inline elements are contained within block-level elements, and
+              surround only small parts of the document’s content (not entire
+              paragraphs or groupings of content). An inline element will not
+              cause a new line to appear in the document. It is typically used
+              with text, for example an <code>&#60;a&#62;</code> element creates
+              a hyperlink, and elements such as <code>&#60;em&#62;</code> or
+              <code>&#60;strong&#62;</code> create emphasis.
+            </li>
+          </ul>
+
+          <p>Consider the following example:</p>
+
+          
+            <p class="codeblock">
+          <code class="block">
+            <strong class="enclose">&#60;</strong>em<strong class="enclose">&#62;</strong>first<strong class="enclose">&#60;</strong>/em<strong class="enclose">&#62;</strong><strong class="enclose">&#60;</strong>em<strong class="enclose">&#62;</strong>second<strong class="enclose">&#60;</strong>/em<strong class="enclose">&#62;</strong><strong class="enclose">&#60;</strong>em<strong class="enclose">&#62;</strong>third<strong class="enclose">&#60;</strong>/em<strong class="enclose">&#62;</strong>
+            <br><br>
+            <strong class="enclose">&#60;</strong>p<strong class="enclose">&#62;</strong>fourth<strong class="enclose">&#60;</strong>/p<strong class="enclose">&#62;</strong><strong class="enclose">&#60;</strong>p<strong class="enclose">&#62;</strong>fifth<strong class="enclose">&#60;</strong>/p<strong class="enclose">&#62;</strong><strong class="enclose">&#60;</strong>p<strong class="enclose">&#62;</strong>sixth<strong class="enclose">&#60;</strong>/p<strong class="enclose">&#62;</strong>
+          </code>
+          </p>
+        
+
+          <p>
+            <code>&#60;em&#62;</code> is an inline element. As you see below,
+            the first three elements sit on the same line, with no space in
+            between. On the other hand, <code>&#60;p&#62;</code> is a
+            block-level element. Each p element appears on a new line, with
+            space above and below. (The spacing is due to default CSS styling
+            that the browser applies to paragraphs.)
+          </p>
+
+          <p class="example">
+            <samp>
+            <em>first</em><em>second</em><em>third</em><br>
+            fourth<br>
+            fifth<br>
+            sixth<br>
+          </samp>
+        </p>
+        </article>
+
+        <article>
+          <header><h3>Empty elements</h3></header>
+
+          <p>
+            Not all elements follow the pattern of an opening tag, content, and
+            a closing tag. Some elements consist of a single tag, which is
+            typically used to insert/embed something in the document. For
+            example, the
+            <code>&#60;img&#62;</code> element embeds an image file onto a page:
+          </p>
+
+          <p class="codeblock">
+          <code class="block">
+            <strong class="enclose">&#60;</strong>img
+            src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"<strong
+              class="enclose"
+              >&#62;</strong
+            >
+          </code>
+        </p>
+
+          <p>This would output the following:</p>
+
+          <p class="example">
+          <samp>
+            <img
+              src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"
+            />
+          </samp>
+        </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Attributes">
+        <header><h2>Attributes</h2></header>
+
+        <article>
+          <p>
+            Elements can also have attributes. Attributes look like this:
+          </p>
+            <img
+              src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png"
+            />
+            <p>
+            Attributes contain extra information about the element that won't
+            appear in the content. In this example, the
+            <code>class</code> attribute is an identifying name used to target
+            the element with style information.
+          </p>
+
+          <p>An attribute should have:</p>
+
+          <ul>
+            <li>
+              A space between it and the element name. (For an element with more
+              than one attribute, the attributes should be separated by spaces
+              too.)
+            </li>
+
+            <li>The attribute name, followed by an equal sign.</li>
+
+            <li>
+              An attribute value, wrapped with opening and closing quote marks.
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <header><h3>Boolean attributes</h3></header>
+
+          <p>
+            Sometimes you will see attributes written without values. This is
+            entirely acceptable. These are called Boolean attributes. Boolean
+            attributes can only have one value, which is generally the same as
+            the attribute name. For example, consider the
+            <code>disabled</code> attribute, which you can assign to form input
+            elements. (You use this to disable the form input elements so the
+            user can't make entries. The disabled elements typically have a
+            grayed-out appearance.) For example:
+          </p>
+
+          <p class="codeblock">
+          <code class="block">
+            <strong class="enclose">&#60;</strong>input type="text"
+            disabled="disabled"<strong class="enclose">&#62;</strong>
+          </code>
+        </p>
+
+          <p>
+            For reference, the example below also includes a non-disabled form
+            input element.
+          </p>
+
+          <p class="example">
+            <samp>
+            <input type="text" disabled />
+            <input type="text" />
+          </samp>
+        </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Anatomy_of_an_HTML_Document">
+        <header><h2>Anatomy of an HTML Document</h2></header>
+
+        <article>
+          <p>
+            Individual HTML elements aren't very useful on their own. Next,
+            let's examine how individual elements combine to form an entire HTML
+            page:
+          </p>
+
+          <pre>
+         <p class="codeblock" id="doc_head">
+          <code class="block">
+<strong class="enclose">&#60;</strong>!DOCTYPE html<strong class="enclose">&#62;</strong>
+<strong class="enclose">&#60;</strong>html<strong class="enclose">&#62;</strong>
+  <strong class="enclose">&#60;</strong>head<strong class="enclose">&#62;</strong>
+    <strong class="enclose">&#60;</strong>meta charset="utf-8"<strong class="enclose">&#62;</strong>
+    <strong class="enclose">&#60;</strong>title<strong class="enclose">&#62;</strong>My test page<strong class="enclose">&#60;</strong>/title<strong class="enclose">&#62;</strong>
+  <strong class="enclose">&#60;</strong>/head<strong class="enclose">&#62;</strong>
+  <strong class="enclose">&#60;</strong>body<strong class="enclose">&#62;</strong>
+    <strong class="enclose">&#60;</strong>p<strong class="enclose">&#62;</strong>This is my page<strong class="enclose">&#60;</strong>/p<strong class="enclose">&#62;</strong>
+  <strong class="enclose">&#60;</strong>/body<strong class="enclose">&#62;</strong>
+<strong class="enclose">&#60;</strong>/html<strong class="enclose">&#62;</strong>
+          </code></p></pre>
+        
+      
+
+          <p>Here we have:</p>
+
+          <ol>
+            <li>
+              <code>&#60;!DOCTYPE html&#62;</code>: The doctype. When HTML was
+              young (1991-1992), doctypes were meant to act as links to a set of
+              rules that the HTML page had to follow to be considered good HTML.
+              <br />
+              More recently, the doctype is a historical artifact that needs to
+              be included for everything else to work right.
+              <code>&#60;!DOCTYPE html&#62;</code> is the shortest string of
+              characters that counts as a valid doctype. That is all you need to
+              know!
+            </li><br>
+
+            <li>
+              <code>&#60;html&#62;&#60;/html&#62;</code>: The
+              <code>&#60;html&#62;</code> element. This element wraps all the
+              content on the page. It is sometimes known as the root element.
+            </li><br>
+
+            <li>
+              <code>&#60;head&#62;&#60;/head&#62;</code>: The
+              <code>&#60;head&#62;</code> element. This element acts as a
+              container for everything you want to include on the HTML page,
+              <strong>that isn't the content</strong> the page will show to
+              viewers. This includes keywords and a page description that would
+              appear in search results, CSS to style content, character set
+              declarations, and more. You'll learn more about this in the next
+              article of the series.
+            </li><br>
+
+            <li>
+              <code>&#60;meta charset="utf-8"&#62;</code>: This element
+              specifies the character set for your document to UTF-8, which
+              includes most characters from the vast majority of human written
+              languages. With this setting, the page can now handle any textual
+              content it might contain. There is no reason not to set this, and
+              it can help avoid some problems later.
+            </li><br>
+
+            <li>
+              <code>&#60;title&#62;&#60;/title&#62;</code>: The
+              <code>&#60;title&#62;</code> element. This sets the title of the
+              page, which is the title that appears in the browser tab the page
+              is loaded in. The page title is also used to describe the page
+              when it is bookmarked.
+            </li><br>
+
+            <li>
+              <code>&#60;body&#62;&#60;/body&#62;</code>: The
+              <code>&#60;body&#62;</code> element. This contains
+              <em>all</em> the content that displays on the page, including
+              text, images, videos, games, playable audio tracks, or whatever
+              else.
+            </li>
+          </ol>
+        </article>
+
+        <article>
+          <header><h3>Whitespace in HTML</h3></header>
+
+          <p>
+            In the examples above, you may have noticed that a lot of whitespace
+            is included in the code. This is optional. These two code snippets
+            are equivalent:
+          </p>
+
+<p class="codeblock">
+          <code class="block">
+<strong class="enclose">&#60;</strong>p<strong class="enclose">&#62;</strong>Dogs are silly.<strong class="enclose">&#60;</strong>/p<strong class="enclose">&#62;</strong>
+
+<strong class="enclose">&#60;</strong>p<strong class="enclose">&#62;</strong>Dogs        are
+        silly.<strong class="enclose">&#60;</strong>/p<strong class="enclose">&#62;</strong>
+          </code></p>
+
+          <p>
+            No matter how much whitespace you use inside HTML element content
+            (which can include one or more space character, but also line
+            breaks), the HTML parser reduces each sequence of whitespace to a
+            single space when rendering the code. So why use so much whitespace?
+            The answer is readability.
+          </p>
+          <p>
+            It can be easier to understand what is going on in your code if you
+            have it nicely formatted. In our HTML we've got each nested element
+            indented by two spaces more than the one it is sitting inside. It is
+            up to you to choose the style of formatting (how many spaces for
+            each level of indentation, for example), but you should consider
+            formatting it.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="References">
+        <header><h2>References</h2></header>
+
+        <p>
+          Technical documentation from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+            target="_blank"
+            >MDN</a
+          >
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+/* #region base webstyle*/
+
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4vw;
+  color: rgb(211, 206, 197);
+  background-color: rgb(19, 20, 26);
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+#main-doc {
+  margin-left: 23vw;
+  margin-right: 1vw;
+}
+
+/* #endregion */
+
+/* #region navbar */
+h1 {
+  font-size: 2rem;
+}
+
+#navbar {
+  position: fixed;
+  width: 20vw;
+  top: 0;
+  left: 1.8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link:link {
+  font-family: "Ubuntu Mono", monospace;
+  width: 100%;
+  padding: 5% 0.5em;
+  text-align: center;
+  align-self: center;
+  background-color: rgba(141, 143, 155, 0.904);
+  color: black;
+  text-decoration: none;
+  border: solid 2px rgb(19, 20, 26);
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: rgba(168, 170, 179, 0.904);
+  font-weight: bold;
+  color: rgb(34, 35, 44);
+  font-size: 1.05rem;
+}
+
+.nav-link:visited {
+  color: black;
+}
+
+/* #endregion */
+
+/* #region code */
+code {
+  background-color: rgba(163, 160, 160, 0.11);
+}
+
+.block {
+  background-color: transparent;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.codeblock {
+  background-color: rgba(163, 160, 160, 0.11);
+  max-width: 60%;
+  padding: 1em 3em;
+  border-left: solid 10px rgb(181, 190, 240);
+}
+
+#doc_head {
+  padding: 0em 3em;
+}
+
+.enclose {
+  color: hotpink;
+}
+
+/* #endregion */
+
+/* #region sample*/
+
+.example {
+  background-color: rgba(163, 160, 160, 0.11);
+  max-width: 60%;
+  padding: 1em 3em;
+  border-left: solid 10px rgb(236, 221, 154);
+  font-family: "Ubuntu Mono", monospace;
+}
+
+/* #endregion */
+
+/* #region portrait screens*/
+
+@media only screen and (max-width: 600px) {
+  
+  :root{
+    font-size: 1.5vmax;
+  }
+  
+  #navbar {
+    position: static;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-link:link {
+    font-family: "Ubuntu Mono", monospace;
+    width: 50%;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    align-self: start;
+    background-color: rgba(141, 143, 155, 0.904);
+    color: black;
+    text-decoration: none;
+    border: solid 2px rgb(255, 255, 255);
+  }
+
+  #main-doc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* #endregion*/
